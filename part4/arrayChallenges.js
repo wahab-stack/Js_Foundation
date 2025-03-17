@@ -1,6 +1,6 @@
 //problem 1
 
-let teaFlavours = ["Green Tea", "Black Tea", "Oolang Tea"];
+let teaFlavours = ["Green Tea", "Black Tea", "Oolong Tea"];
 const firstTea = teaFlavours[0];
 // console.log(firstTea);
 
@@ -12,7 +12,7 @@ const favCity = cities[2];
 
 //problem 3
 
-let teaTypes = ["herbal tea", "white tea", "masala chai"];
+let teaTypes = ["herbal tea", "white tea", "masada chai"];
 teaTypes[1] = "jasmine tea";
 // console.log(teaTypes);
 
@@ -33,7 +33,7 @@ const lastOrder = teaOrders.pop();
 
 //problem 6
 
-let popularTea = ["green tea", "oolang tea", "chai"];
+let popularTea = ["green tea", "oolong tea", "chai"];
 // let softCopyTeas = [popularTea];    //Soft copy or shallow copy
 // console.log(softCopyTeas);
 
@@ -54,7 +54,7 @@ let worldCities = europeanCities.concat(asianCities);
 
 // problem 9
 
-let teaMenu = ["Masala tea", "oolang tea", "green tea", "earl grey"];
+let teaMenu = ["Masada tea", "oolong tea", "green tea", "earl grey"];
 
 let menuLength = teaMenu.length;
 // console.log(menuLength);
@@ -64,4 +64,4 @@ let menuLength = teaMenu.length;
 let cityBucketList = ["Kyoto", "London", "Cape Town", "Vancouver"];
 
 let isLondonList = cityBucketList.includes("London");
-// console.log(isLondonList);
+console.log(isLondonList);
