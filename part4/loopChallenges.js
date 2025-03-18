@@ -23,7 +23,7 @@ while (j > 0) {
   countdown.push(j);
   j--;
 }
-console.log(countdown);
+// console.log(countdown);
 
 /*
 -------------------------------------Problem 3
@@ -62,3 +62,5 @@ do {
 write a 'for' loop that multiplies each element in the array '[2, 4, 6]' by 2 and stores the result in a new array named 'multipliedNumber'.
 
 */
+let multipliedNumber = [];
+let numbers = [2, 4, 6];
