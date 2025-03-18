@@ -33,16 +33,16 @@ Store each tea type in an array named "teaCollection"
 
 */
 
-let teaCollection = [];
-let tea = "abc";
+// let teaCollection = [];
+// let tea = "abc";
 
-do {
-  tea = prompt('Enter your favorite tea (type "stop" to finish)');
-  if (tea != "stop") {
-    teaCollection.push(tea);
-  } else {
-  }
-} while (tea != "stop");
+// do {
+//   tea = prompt('Enter your favorite tea (type "stop" to finish)');
+//   if (tea != "stop") {
+//     teaCollection.push(tea);
+//   } else {
+//   }
+// } while (tea != "stop");
 
 //-------------------------------------Problem 4
 
@@ -64,3 +64,24 @@ write a 'for' loop that multiplies each element in the array '[2, 4, 6]' by 2 an
 */
 let multipliedNumber = [];
 let numbers = [2, 4, 6];
+
+for (let l = 0; l < numbers.length; l++) {
+  takeNumber = numbers[l] * 2;
+  multipliedNumber.push(takeNumber);
+}
+// console.log(multipliedNumber);
+
+//----------------------------------Problem 6
+/*
+write a for loop that lists all the cities in the array cities in the array ['New York', 'London', 'Tokyo', 'Paris'] and stores each city in a new array named 'cityList'.
+
+*/
+
+let cities = ["New York", "London", "Tokyo", "Paris"];
+let cityList = [];
+
+for (let c = 0; c < cities.length; c++) {
+  const myCity = cities[c];
+  cityList.push(myCity);
+}
+console.log(cityList); // ['New York', 'London', 'Tokyo', 'Paris']
