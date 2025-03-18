@@ -79,4 +79,25 @@ for (const tea of teaTypes) {
 // console.log(preferredTeas);
 
 /* ----------- Problem 5---------
+use for-in loop to loop through an object containing city populations.
+    Stop the loop when the population `"berlin"` is found and store all previous cities' populations in a new object named `cityPopulations`.
+*/
+let cityPopulation = {
+  london: 890000,
+  Newyork: 8400000,
+  berlin: 3400000,
+  paris: 2200000,
+  madrid: 3500000,
+};
 
+let cityNewPopulations = {};
+// console.log(Object.keys(cityPopulation)); //[ 'london', 'newyork', 'paris', 'berlin', 'madrid' ]
+// console.log(Object.values(cityPopulation)); //[ 890000, 8400000, 2200000, 3400000, 3500000 ]
+
+for (const city in cityPopulation) {
+  if (city === "berlin") {
+    break;
+  }
+  cityNewPopulations[city] = cityPopulation[city];
+}
+console.log(cityNewPopulations); // { london: 890000, Newyork: 8400000 }
