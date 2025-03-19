@@ -163,4 +163,4 @@ for (const tea of TeaCollection) {
   }
   shortTeas.push(tea);
 }
-console.log(shortTeas);
+// console.log(shortTeas);
