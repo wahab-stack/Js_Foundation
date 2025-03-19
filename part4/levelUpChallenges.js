@@ -100,4 +100,67 @@ for (const city in cityPopulation) {
   }
   cityNewPopulations[city] = cityPopulation[city];
 }
-console.log(cityNewPopulations); // { london: 890000, Newyork: 8400000 }
+// console.log(cityNewPopulations); // { london: 890000, Newyork: 8400000 }
+
+//problem 7 for each loop
+
+let TeaTypes = ["earl", "green", "black", "chai", "oolong", "herbal"];
+let availableTeas = [];
+
+TeaTypes.forEach(function (tea) {
+  //   console.log(tea);
+
+  if (tea === "chai") {
+    return;
+  }
+  availableTeas.push(tea);
+});
+
+// console.log(availableTeas);
+
+//problem 8   for-each loop
+
+let worldCities = ["london", "new york", "paris", "berlin"];
+let travelCities = [];
+
+worldCities.forEach(function (city) {
+  if (city === "paris") {
+    return;
+  }
+  travelCities.push(city);
+});
+
+// console.log(travelCities);
+
+//problem 9 for loop
+
+let MyNumbers = [2, 5, 7, 9];
+let DoubleNumbers = [];
+
+for (let i = 0; i < MyNumbers.length; i++) {
+  if (MyNumbers[i] === 7) {
+    continue;
+  }
+  DoubleNumbers.push(MyNumbers[i] * 2); // Multiply each number by 2
+}
+// console.log(DoubleNumbers);
+
+//problem 10 for-of loop
+
+let TeaCollection = [
+  "green tea",
+  "black tea",
+  "chai tea",
+  "oolong tea",
+  "earl grey tea",
+];
+let shortTeas = [];
+
+for (const tea of TeaCollection) {
+  if (tea.length > 10) {
+    //if the length of the tea is greater than 10, skip it
+    break;
+  }
+  shortTeas.push(tea);
+}
+console.log(shortTeas);
