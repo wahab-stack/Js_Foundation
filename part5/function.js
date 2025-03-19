@@ -68,4 +68,4 @@ function createTeaMaker() {
 }
 let teaMaker = createTeaMaker();
 let message = teaMaker("Green");
-console.log(message); // making green tea
+console.log(message); // Making: Green tea
