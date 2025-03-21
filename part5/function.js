@@ -69,3 +69,15 @@ function createTeaMaker() {
 let teaMaker = createTeaMaker();
 let message = teaMaker("Green");
 console.log(message); // Making: Green tea
+
+//task index.js udemy
+function stringToNumber(input) {
+  const number = Number(input);
+  if (typeof number === "number" && !isNaN(number)) {
+    return number;
+  } else {
+    return "Not a number";
+  }
+}
+let num = stringToNumber("123");
+console.log(num); // Not a number
