@@ -89,3 +89,15 @@ console.log(reversed); // [5, 4, 3, 2, 1]
 const arry = [1, 2, 3, 4, 5];
 const max = Math.max(...arry);
 console.log(max); // 5
+
+//
+
+function printMultiplicationTable(n) {
+  const table = [];
+  for (let i = 1; i <= 10; i++) {
+    table.push(`${n} * ${i} = ${n * i}`);
+  }
+  return table;
+}
+const Table = printMultiplicationTable(6);
+console.log(Table);
