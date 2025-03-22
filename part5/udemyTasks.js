@@ -101,3 +101,18 @@ function printMultiplicationTable(n) {
 }
 const Table = printMultiplicationTable(6);
 console.log(Table);
+
+//
+
+function CountVowels(str) {
+  const vowels = "aeiouAEIOU";
+  let count = 0;
+  for (let char of str) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+  return count;
+}
+const vowels = CountVowels("Hello this me Wahab from pakistan");
+console.log(vowels); //10
