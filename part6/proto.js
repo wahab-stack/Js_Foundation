@@ -38,3 +38,14 @@ teacher.__proto__ = user;
 //Modern syntax
 
 Object.setPrototypeOf(TeachingSupport, teacher);
+
+let anotherUsername = "ADEE";
+
+String.prototype.greet = function () {
+  console.log(`${this}`);
+  console.log(`true length is : ${this.trim().length}`);
+};
+
+anotherUsername.greet();
+"hello ADEE".greet();
+"this is my channel".greet();
