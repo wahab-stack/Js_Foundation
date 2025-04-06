@@ -43,4 +43,11 @@ let car = {
     return `${this.model} car got started in ${this.year}`;
   },
 };
-console.log(car.start());
+// console.log(car.start());
+
+function person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+let john = new person("john doe", 20);
+console.log(john.name);
