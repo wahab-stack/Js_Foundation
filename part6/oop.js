@@ -28,9 +28,19 @@ function User(username, loginCount, isLoggedIn) {
 
 const user1 = new User("Abdul", 7, true);
 const user2 = new User("Wahab", 8, true);
-console.log(user1.constructor);
-console.log(user2);
+// console.log(user1.constructor);
+// console.log(user2);
 
 // new keyword is used to create an object from a constructor function
 // new keyword creates an empty object
 // new keyword binds the empty object to the this keyword
+
+let car = {
+  make: "Toyota",
+  model: "camry",
+  year: "2020",
+  start: function () {
+    return `${this.model} car got started in ${this.year}`;
+  },
+};
+console.log(car.start());
