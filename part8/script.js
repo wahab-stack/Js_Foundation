@@ -49,3 +49,30 @@ document
 document.getElementById("clickMeButton").addEventListener("click", function () {
   alert("this DOM practice dude ");
 });
+
+//Example 7
+
+document.getElementById("teaList").addEventListener("click", function (event) {
+  if (event.target && event.target.matches(".teaItem")) {
+    alert("You selected: " + event.target.textContent);
+  }
+});
+
+//Example 8
+
+document
+  .getElementById("feedbackform")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    let feedback = document.getElementById("feedbackInput").value;
+    console.log(feedback);
+    document.getElementById(
+      "feedbackDisplay"
+    ).textContent = `Feedback is: ${feedback}`;
+  });
+
+//Example 9
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("domStatus").textContent = "DOM Fully Loaded";
+});
