@@ -1,9 +1,14 @@
 /*
+Promise > A Promise is an object representing the eventual completion or failure
+
 Key Concepts of Promises
+
 States of a Promise:
+
 Pending: Initial state (neither fulfilled nor rejected).
 Fulfilled (Resolved): The operation completed successfully.
 Rejected: The operation failed.
+
 */
 function fetchData() {
   return new Promise((resolve, reject) => {
